@@ -1,0 +1,3 @@
+https://a316cfa5-1c57-4131-be39-6c76e0917a72.ws-us02.gitpod.io/#/workspace/cordova-gitpod-workspace
+
+https://github.com/LIhDi/cordova-gitpod-workspace

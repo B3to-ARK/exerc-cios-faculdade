@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="impostoAPP">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- 1º passo: Adicionar o CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        
+        <script src="js/App.js" type="text/javascript"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body ng-controller="impostoController">
+        <div class="container">
+        <form>
+            <!-- Entrada de dados -->
+            <div class="form-group">
+                <label>
+                    Salario Bruto:<input ng-model="salario" class="form-control"/>
+                </label></br>
+                <label>
+                    Número de Dependentes:<input ng-model="numerodependente" class="form-control"/>
+                </label></br>
+                <label>
+                    Valor do Plano de Saude:<input ng-model="planodesaude" class="form-control"/>
+                </label></br>
+                <label>
+                    Valor da Contribuição Sindical:<input ng-model="sindicato" class="form-control"/>
+                </label></br>
+                <button ng-click="calcularImposto()" class="btn btn-success">
+                    Calcular
+                </button>
+            </div>
+
+            <!-- Saída da informação -->
+            <div ng-show="exibeResultados">
+                <hr/>
+                <div>
+                    Salario Bruto: R$ {{ salario | number : 2 }}
+                    </br>
+                </div>
+                <div>
+                    Teto do INSS: R$ {{ tetoinss | number : 2 }}
+                    </br>
+                </div>
+                <div>
+                    Total a deduzir pelo numero de dependentes: R$ {{ valordependente | number : 2 }}
+                    </br>
+                    (Quantia a deduzir por dependente R$ 189,59) 
+                    </br>
+                </div>
+                <div>
+                    Parcela a deduzir do imposto (desde 1/4/2015): R$ {{ alicotareal | number : 2 }}
+                </div>
+                <div>
+                    IRRF Acima de {{ salario | number : 2 }} - {{ alicotapercent }}: R$ {{ alicotap | number : 2 }}
+                </div>
+                <div>
+                    Vale Refeição: R$ {{ valerefeicao | number : 2 }}
+                </div>
+                <div> 
+                    Plano de Saúde: R$ {{ valorplanosaude | number : 2 }}
+                </div>
+                <div> 
+                    Contribuição Sindical: R$ {{ contribuicaosindical | number : 2 }}
+                </div>
+                <div> 
+                    Salario Líquido: R$ {{ salarioliquido | number : 2 }}
+                </div>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
