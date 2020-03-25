@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
 
     <title>Só de Cenoura Garçom</title>
-    
+
     <link rel="stylesheet" href="icons/material.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -16,26 +16,96 @@
     <div class="topo-fixo z-depth-1">
         <div class="valign-wrapper yellow darken-4 white-text">
             <h5 class="titulo">Só de Cenoura</h5>
+
             <div>
-                <i class="material-icons waves-effect waves-light waves-circle dropdown-button" data-activates="submenu" data-gutter="5" data-constrainwidth="false">more_vert</i>
+                <i class="material-icons waves-effect waves-light
+                          waves-circle dropdown-button"
+                    data-activates="submenu" data-gutter="5"
+                    data-constrainwidth="false">
+                        more_vert
+                </i>
+
                 <ul id="submenu" class="dropdown-content">
-                    <li><a class="black-text acao-limpar">Limpar</a></li>
+                  <li><a class="black-text acao-limpar">Limpar</a></li>
                 </ul>
             </div>
         </div>
 
         <ul class="tabs yellow darken-4">
             <li class="tab">
-                <a href="#bolos" class="white-text waves-effect waves-light">
+                <a href="#bolos"
+                   class="white-text waves-effect waves-light">
                     Bolos
                 </a>
             </li>
             <li class="tab">
-                <a href="#bebidas" class="white-text waves-effect waves-light">
+                <a href="#bebidas"
+                   class="white-text waves-effect waves-light">
                     Bebidas
                 </a>
             </li>
         </ul>
+    </div>
+
+    <div id="bolos" class="section">
+        <h6 class="container brown-text">Fatia</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Só de Cenoura</a>
+            <a class="collection-item waves-effect black-text">Com Nutella</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado</a>
+        </div>
+
+        <h6 class="container brown-text">Inteiro</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect black-text">Só de Cenoura inteiro</a>
+            <a class="collection-item waves-effect black-text">Com Nutella inteiro</a>
+            <a class="collection-item waves-effect black-text">De Brigadeiro inteiro</a>
+            <a class="collection-item waves-effect black-text">Açucarado inteiro</a>
+        </div>
+    </div>
+
+    <div id="bebidas" class="section">
+        <h6 class="container brown-text">Cafés</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect waves-light black-text">Espresso</a>
+            <a class="collection-item waves-effect waves-light black-text">Capuccino</a>
+            <a class="collection-item waves-effect waves-light black-text">Mocachino</a>
+        </div>
+
+        <h6 class="container brown-text">Chocolate Quente</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect waves-light black-text">Choco Quente</a>
+        </div>
+
+        <h6 class="container brown-text">Chá da tarde</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect waves-light black-text">Chá de Camomila</a>
+            <a class="collection-item waves-effect waves-light black-text">Chá Mate</a>
+            <a class="collection-item waves-effect waves-light black-text">Chá de Hortelã</a>
+        </div>
+
+        <h6 class="container brown-text">Sucos Naturais</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect waves-light black-text">Suco de Laranja</a>
+            <a class="collection-item waves-effect waves-light black-text">Suco de Melancia</a>
+            <a class="collection-item waves-effect waves-light black-text">Suco de Abacaxi</a>
+            <a class="collection-item waves-effect waves-light black-text">Suco de Limão</a>
+        </div>
+        
+        <h6 class="container brown-text">Refrigerantes</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect waves-light black-text">Soda</a>
+            <a class="collection-item waves-effect waves-light black-text">Guaraná</a>
+            <a class="collection-item waves-effect waves-light black-text">Coca</a>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect waves-light brown modal-trigger"
+           href="#confirmacao" id="confirmar">
+            <i class="material-icons">done</i>
+        </a>
     </div>
 
     <div id="confirmacao" class="modal modal-fixed-footer">
@@ -45,68 +115,19 @@
             <blockquote id="resumo"></blockquote>
         </div>
         <div class="modal-footer">
-            <button class="btn deep-orange waves-effect waves-light modal-close">Pedir</button>
-            <button class="btn-flat waves-effect waves-red modal-close">Cancelar</button>
-        </div>
-    </div>
-
-    <div class="fixed-action-btn">
-        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect waves-light brown">
-            <i class="material-icons">done</i>
-        </a>
-    </div>
-
-    <div id="bolos" class="section">
-        <div class="collection">
-            <a class="collection-item waves-effect"-i>Só de Cenoura</a>
-            <a class="collection-item waves-effect">Com Nutella</a>
-            <a class="collection-item waves-effect">De Brigadeiro</a>
-            <a class="collection-item waves-effect">Açucarado</a>
-        </div>
-    </div>
-
-    <div id="bebidas" class="section">
-        <h6 class="container">Cafés</h6>
-        <div class="collection">
-            <a class="collection-item waves-effect waves-light">Espresso</a>
-            <a class="collection-item waves-effect waves-light">Capuccino</a>
-            <a class="collection-item waves-effect waves-light">Mocachino</a>
-        </div>
-
-        <h6 class="container">Choco Quente</h6>
-        <div class="collection">
-            <a class="collection-item waves-effect waves-light">Choco Quente</a>
-        </div>
-
-        <h6 class="container">Chá da tarde</h6>
-        <div class="collection">
-            <a class="collection-item waves-effect waves-light">Chá de Camomila</a>
-            <a class="collection-item waves-effect waves-light">Chá Mate</a>
-            <a class="collection-item waves-effect waves-light">Chá de Hortelã</a>
-        </div>
-
-        <h6 class="container">Sucos Naturais</h6>
-        <div class="collection">
-            <a class="collection-item waves-effect waves-light">Suco de Laranja</a>
-            <a class="collection-item waves-effect waves-light">Suco de Melancia</a>
-            <a class="collection-item waves-effect waves-light">Suco de Abacaxi</a>
-            <a class="collection-item waves-effect waves-light">Suco de Limão</a>
-        </div>
-        
-        <h6 class="container">Refrigerantes</h6>
-        <div class="collection">
-            <a class="collection-item waves-effect waves-light">Soda</a>
-            <a class="collection-item waves-effect waves-light">Guaraná</a>
-            <a class="collection-item waves-effect waves-light">Coca</a>
+            <button class="btn deep-orange waves-effect waves-light modal-close">
+                Pedir
+            </button>
+            <button class="btn-flat waves-effect waves-red modal-close acao-limpar">
+                Cancelar
+            </button>
         </div>
     </div>
 
        
     <script src="js/jquery.min.js"></script>
-    
     <script src="js/materialize.min.js"></script>
-
     <script src="js/app.js"></script>
-
+    
 </body>
 </html>
