@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    
+    <name>Menu Só de Cenoura</name>
+
+    <description>
+        Menu do restaurante Só de Cenoura.
+    </description>
+
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+
+    <preference name="android-minSdkVersion" value="19" />
+    <platform name="android" />
+
+    <icon src="icon.png" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <splash src="splash.png" />
+
+</widget>
