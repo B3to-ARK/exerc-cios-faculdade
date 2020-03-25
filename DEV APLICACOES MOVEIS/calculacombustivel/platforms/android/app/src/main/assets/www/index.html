@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="combustivelApp">
+    <head>
+        <title>Calcula Combustivel APP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Adicionar o CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="icons/material.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/index.js"></script>
+        
+    </head>
+    <body ng-controller="combustivelController">
+        <div class="container">
+        <form>
+            <!-- Entrada de dados -->
+            <div class="form-group">
+                <label>
+                    Valor da Gasolina:<input ng-model="gasolina" class="form-control"/>
+                </label></br>
+                <label>
+                    Valor do Álcool:<input ng-model="alcool" class="form-control"/>
+                </label></br>
+                <button ng-click="calcular()" class="btn btn-success waves-effect waves-light brown">
+                    Calcular
+                </button>
+            </div>
+
+            <!-- Saída da informação -->
+            <div ng-show="exibeResultados">
+                <hr/>
+                <div>
+                    Escolha: {{ combustivel }}
+                </div>
+            </div>
+        </form>
+        </div>
+
+
+
+
+
+        
+
+        <div class="container">
+            <form>
+                <!-- Entrada de dados -->
+                <div class="form-group">
+                    <label>
+                        Para valores mais precisos preencha também os dados a baixo e clique no botão abaixo.
+                    </label></br>
+                    <label>
+                        Consumo Álcool (Km/L):<input ng-model="consumoalcool" class="form-control"/>
+                    </label></br>
+                    <label>
+                        Consumo Gasolina (Km/L):<input ng-model="consumogasolina" class="form-control"/>
+                    </label></br>
+                    <button ng-click="calcularpreciso()" class="btn btn-success waves-effect waves-light">
+                        Calculo Preciso
+                    </button>
+                </div>
+    
+                <!-- Saída da informação -->
+                <div ng-show="exibeResultados">
+                    <hr/>
+                    <div>
+                        Escolha: {{ combustivelpreciso }}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
