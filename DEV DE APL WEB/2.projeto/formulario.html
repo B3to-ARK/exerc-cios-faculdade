@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Input Types - Formul&aacute;rio</title>
+<meta name="description" content="Input Types - Formulario">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="./arquivos/css" rel="stylesheet" type="text/css">
+<link href="./arquivos/css2" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="./arquivos/base.css">
+<link rel="stylesheet" href="./arquivos/skeleton.css">
+<link rel="stylesheet" href="./arquivos/layout.css">
+<link rel="stylesheet" href="./arquivos/styles.css">
+
+</head>
+
+<body><form id="new-input-type-form">
+	<div class="container">
+	<div class="sixteen columns">
+		<img src="./arquivos/logo-unicarioca1.png">
+		<h1>Input Types - Formul&aacute;rio</h1>
+		<h4>Desenvolvimento de Aplica&ccedil;&otilde;es Web</h4>
+		<h5>Prof Anderson</h5>
+		<!-- row 1 -->
+		<div class="row"> 
+			<!-- Type = text -->
+			<div class="input-type-container one-third column alpha">
+				<h2><span class="input-type-number">1</span> text</h2>
+				<input type="text" placeholder="Escreva algo">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="text" placeholder="Escreva algo"&gt;</pre>
+			</div>
+			<!-- Type = password -->
+			<div class="input-type-container one-third column">
+				<h2><span class="input-type-number">2</span> password</h2>
+				<input type="password" placeholder="Senha?">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="password"  placeholder="Senha?"&gt;</pre>
+			</div>
+			<!-- Type = submit -->
+			<div class="input-type-container one-third column omega">
+				<h2><span class="input-type-number">3</span> submit</h2>
+				<input type="submit">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="submit"&gt;</pre>
+			</div>
+		</div>
+		<!-- row 2 -->
+		<div class="row"> 
+			<!-- Type = reset -->
+			<div class="input-type-container one-third column alpha">
+				<h2><span class="input-type-number">4</span> reset</h2>
+				<input type="reset">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="reset"&gt;</pre>
+			</div>
+			<!-- Type = password -->
+			<div class="input-type-container one-third column">
+				<h2><span class="input-type-number">5</span> radio</h2>
+				<input type="radio" name="curso" value="ads" checked> ADS<br>
+  				<input type="radio" name="curso" value="cc"> CC<br>
+  				<input type="radio" name="curso" value="redes"> Redes
+				<h3>C&oacute;digo HTML</h3>
+				<pre>
+				&lt;input type="radio" name="curso" value="ads" checked&gt; ADS<br>
+  				&lt;input type="radio" name="curso" value="cc"&gt; CC<br>
+  				&lt;input type="radio" name="curso" value="redes"&gt; Redes
+				</pre>
+			</div>
+			<!-- Type = submit -->
+			<div class="input-type-container one-third column omega">
+				<h2><span class="input-type-number">6</span> checkbox</h2>
+				<input type="checkbox" name="unidaderc" value="RC"> Fa&ccedil;o disciplinas no RC<br>
+  				<input type="checkbox" name="unidademe2" value="M2"> Fa&ccedil;o disciplinas no M&eacute;ier 
+				<h3>C&oacute;digo HTML</h3>
+				<pre>
+				&lt;input type="checkbox" name="unidaderc" value="RC"&gt; Fa&ccedil;o disciplinas no RC<br>
+  				&lt;input type="checkbox" name="unidademe2" value="M2"&gt; Fa&ccedil;o disciplinas no M&eacute;ier 
+				</pre>
+			</div>
+		</div>
+		<!-- row 3 -->
+		<div class="row"> 
+			<!-- Type = date -->
+			<div class="input-type-container one-third column alpha">
+				<h2><span class="input-type-number">7</span> date</h2>
+				<input type="date">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="date"&gt;</pre>
+			</div>
+			<!-- Type = datetime -->
+			<div class="input-type-container one-third column">
+				<h2><span class="input-type-number">8</span> datetime</h2>
+				<input type="datetime">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="datetime"&gt;</pre>
+			</div>
+			<!-- Type = datetime-local -->
+			<div class="input-type-container one-third column omega">
+				<h2><span class="input-type-number">9</span> datetime-local</h2>
+				<input type="datetime-local">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="datetime-local"&gt;</pre>
+			</div>
+		</div>
+		<!-- row 4 -->
+		<div class="row"> 
+			<!-- Type = month -->
+			<div class="input-type-container one-third column alpha">
+				<h2><span class="input-type-number">10</span> month</h2>
+				<input type="month">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="month"&gt;</pre>
+			</div>
+			<!-- Type = time -->
+			<div class="input-type-container one-third column">
+				<h2><span class="input-type-number">11</span> time</h2>
+				<input type="time">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="time"&gt;</pre>
+			</div>
+			<!-- Type = week -->
+			<div class="input-type-container one-third column omega">
+				<h2><span class="input-type-number">12</span> week</h2>
+				<input type="week">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="week"&gt;</pre>
+			</div>
+		</div>
+		<!-- row 5 -->
+		<div class="row">
+			<div class="input-type-container one-third column alpha"> 
+				<!-- Type = color -->
+				<h2><span class="input-type-number">13</span> color</h2>
+				<input type="color" value="#c04019" style="width:200px;">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="color" value="#c04019"&gt;</pre>
+			</div>
+			<div class="input-type-container one-third column"> 
+				<!-- Type = email -->
+				<h2><span class="input-type-number">14</span> email</h2>
+				<span class="email-input-type-fix">
+				<input type="email" placeholder="Formato: asantos@unicarioca.edu.br">
+				</span>
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="email" placeholder="Formato: asantos@unicarioca.edu.br"&gt;</pre>
+			</div>
+			<div class="input-type-container one-third column omega"> 
+				<!-- Type = tel -->
+				<h2><span class="input-type-number">15</span> tel</h2>
+				<input type="tel" placeholder="Formato: 1234567890" pattern="[0-9]{10}">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="tel" placeholder="Formato: 1234567890" pattern="[0-9]{10}"&gt;</pre>
+			</div>
+		</div>
+		<!-- row 6 -->
+		<div class="row">
+			<div class="input-type-container one-third column alpha"> 
+				<!-- Type = search -->
+				<h2><span class="input-type-number">16</span> search</h2>
+				<p>Pesquisa lista de unidades:</p>
+				<input type="search" list="online-stores">
+				<datalist id="online-stores" style="display:hidden;">
+					<option value="Rio Comprido"></option>
+					<option value="M&eacute;ier 1"></option>
+					<option value="M&eacute;ier 2"></option>
+					<option value="M&eacute;ier 3"></option>
+					<option value="M&eacute;ier 4"></option>
+					<option value="Jacarepagu&aacute;"></option>
+					<option value="Bento Ribeiro"></option>
+					<option value="Tr&ecirc;s Rios"></option>
+				</datalist>
+				<h3>C&oacute;digo HTML</h3>
+				<pre>	
+&lt;p&gt;Pesquisa lista de unidades:&lt;/p&gt;<br>&lt;input type="search" list="online-stores"&gt;
+&lt;datalist id="online-stores" style="display:hidden;"&gt;
+  &lt;option value="Rio Comprido"&gt;&lt;/option&gt;
+  &lt;option value="M&eacute;ier 1"&gt;&lt;/option&gt;
+  &lt;option value="M&eacute;ier 2"&gt;&lt;/option&gt;
+  &lt;option value="M&eacute;ier 3"&gt;&lt;/option&gt;
+  &lt;option value="M&eacute;ier 4"&gt;&lt;/option&gt;
+  &lt;option value="Jacarepagu&aacute;"&gt;&lt;/option&gt;
+  &lt;option value="Bento Ribeiro"&gt;&lt;/option&gt;
+  &lt;option value="Tr&ecirc;s Rios"&gt;&lt;/option&gt;
+&lt;/datalist&gt;</pre>
+			</div>
+			<div class="input-type-container one-third column"> 
+				<!-- Type = range -->
+				<h2><span class="input-type-number">17</span> range</h2>
+				<input type="range" min="1" max="10">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="range" min="1" max="10"&gt;</pre>
+			</div>
+			<div class="input-type-container one-third column omega"> 
+				<!-- Type = number -->
+				<h2><span class="input-type-number">18</span> number</h2>
+				<input type="number">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="number"&gt;</pre>
+			</div>
+		</div>
+		<!-- row 7 -->
+		<div class="row">
+			<div class="input-type-container one-third column alpha"> 
+				<!-- Type = search -->
+				<h2><span class="input-type-number">19</span> select</h2>
+				<p>Lista de unidades:</p>
+				<select id="online-stores" style="display:hidden;">
+					<option value="Rio Comprido">Rio Comprido</option>
+					<option value="M&eacute;ier 1">M&eacute;ier 1</option>
+					<option value="M&eacute;ier 2">M&eacute;ier 2</option>
+					<option value="M&eacute;ier 3">M&eacute;ier 3</option>
+					<option value="M&eacute;ier 4">M&eacute;ier 4</option>
+					<option value="Jacarepagu&aacute;">Jacarepagu&aacute;</option>
+					<option value="Bento Ribeiro">Bento Ribeiro</option>
+					<option value="Tr&ecirc;s Rios">Tr&ecirc;s Rios</option>
+				</select>
+				<h3>C&oacute;digo HTML</h3>
+				<pre>	
+&lt;p&gt;Lista de unidades:&lt;/p&gt;<br>&lt;input type="search" list="online-stores"&gt;
+&lt;select id="online-stores" style="display:hidden;"&gt;
+  &lt;option value="Rio Comprido"&gt;Rio Comprido&lt;/option&gt;
+  &lt;option value="M&eacute;ier 1"&gt;M&eacute;ier 1&lt;/option&gt;
+  &lt;option value="M&eacute;ier 2"&gt;M&eacute;ier 2&lt;/option&gt;
+  &lt;option value="M&eacute;ier 3"&gt;M&eacute;ier 3&lt;/option&gt;
+  &lt;option value="M&eacute;ier 4"&gt;M&eacute;ier 4&lt;/option&gt;
+  &lt;option value="Jacarepagu&aacute;"&gt;Jacarepagu&aacute;&lt;/option&gt;
+  &lt;option value="Bento Ribeiro"&gt;Bento Ribeiro&lt;/option&gt;
+  &lt;option value="Tr&ecirc;s Rios"&gt;Tr&ecirc;s Rios&lt;/option&gt;
+&lt;/select&gt;</pre>
+			</div>
+			<div class="input-type-container one-third column"> 
+				<!-- Type = range -->
+				<h2><span class="input-type-number">20</span> textarea</h2>
+				<textarea name="message" rows="10" cols="30">Registre aqui a sua opini&atilde;o
+				</textarea>
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;textarea name="message" rows="10" cols="30"&gt;
+				Registre aqui a sua opini&atilde;o
+				&lt;/textarea&gt;</pre>
+			</div>
+			<div class="input-type-container one-third column alpha"> 
+				<!-- Type = url -->
+				<h2><span class="input-type-number">21</span> url</h2>
+				<input type="url">
+				<h3>C&oacute;digo HTML</h3>
+				<pre>&lt;input type="url"&gt;</pre>
+			</div>
+		</div>
+		<!-- row 7 -->
+		<div class="row">
+			<div class="submit-form-for-testing-only three-thirds column omega">
+				<h2>Apenas para teste</h2>
+				<p>Use este bot&atilde;o para enviar o formul&aacute;rio para que voc&ecirc; possa ver texto de valida&ccedil;&atilde;o de dados de certos tipos de entrada.</p>
+				<input class="button" type="submit">
+			</div>
+		</div>
+		
+	</div>
+
+
+</div></form></body></html>

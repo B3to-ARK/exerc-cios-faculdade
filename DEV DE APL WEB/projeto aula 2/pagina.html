@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>login</title>
+	
+	<link rel="stylesheet" href="style1.css" type="text/css" />
+	<section>
+		<div id="logo">
+			<img src="login.jpg">
+		</div>
+	</section>
+			
+	<script>
+	function CheckPassword(inputxt){
+		if (inputxt != null){ alert("digite uma senha");}
+	}
+	</script>
+
+	
+</head>
+<body>
+
+	<div id="page">
+	
+	  <div id="content">
+		<div id="logo">
+			<img src="login.jpg" width="543">
+		</div>
+		<form name="form1" action="#">
+		<ul>
+			<h2>Username <input type="text" style="width: 300px;"></h2>
+			<h2>Password <input type="password" name="pass"></h2>
+			
+			<h1><input type="checkbox" name="rememberme" value="M3"> Remember me 
+			<a href="#" style="margin-left:500px;" onclick="prompt('Digite deu email')">Forgot password?</a></h1>
+		</ul>	
+		</form>
+			<div>
+			<ul>
+			<script>if (pass != null){ alert("senha invalida");}</script>
+			<a href="#" name="a2" onclick="CheckPassword(document.form1.pass)" >
+			<img src="login.jpg"></a>
+			</ul>
+		    </div>
+			
+		</div>
+	
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+html, body {
+	background-color: #ffffff;
+	font:16px/24px "Arial", sans-serif;
+}
+
+h1, h2, h3, input, pre, p {
+	margin:15px;
+}
+
+h1 {
+	color: #000000;
+	font: 32px/24px "Arial", serif;
+	margin:40px auto;
+	text-align: center;
+	line-height: 0px;
+}
+h2 {
+	color: #eaebeb;
+	font: 22px/40px "Arial", serif;
+}
+h3 {
+	color: #bcc6d0;
+	font: 16px/0px "Arial", serif;
+}
+h4 {
+	color: #000000;
+	font: 22px/18px "Arial", serif;
+	margin:40px auto;
+	text-align: center;
+	line-height: 0px;
+}
+h5 {
+	color: #000000;
+	font: 20px/16px "Arial", serif;
+	margin:40px auto;
+	text-align: center;
+	line-height: 0px;
+}
+img {
+	display: block;
+    margin: auto;
+}
+pre {
+	color: #000000;
+	padding: 5px;
+	font:12px/18px "Droid Sans Mono", sans-serif;
+	
+	/* via: http://css-tricks.com/snippets/css/make-pre-text-wrap/ */
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+	background: #e2e2e2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+	
+	border: 1px solid #34393d;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	-webkit-box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+}
+.input-type-container {
+	background:#999999;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	-webkit-box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.75);
+}
+.input-type-number {
+	display:inline-block;
+	width: 40px;
+	line-height: 40px;
+	margin-right:10px;
+	background:#ff0000;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+span.email-input-type-fix {
+	display: block;
+	margin: 15px;
+}
+.submit-form-for-testing-only {
+	background: #8a8c8e;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.button {
+	width: 320px;
+	text-align:center;
+}

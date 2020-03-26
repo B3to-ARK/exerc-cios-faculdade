@@ -1,0 +1,15 @@
+<body>
+<script>
+	var fib_1=0, fib_2=1, fibonacci=0;
+	
+	document.writeln(0 + "<br>");
+	document.writeln(1 + "<br>");
+	
+	for(i=0; i<100; i++){
+		fibonacci = fib_1 + fib_2;
+		document.writeln(fibonacci + "<br>");
+		fib_1 = fib_2;
+		fib_2 = fibonacci;
+	}	
+</script>
+</body>

@@ -1,0 +1,26 @@
+<head>
+<script>
+
+</script>
+</head>
+<body>
+<script>
+	var f = function fibonacci(n){
+	var fib_1=0, fib_2=1, f=0, fib_str;	
+	fib_str = 0 + "<br>";
+	fib_str += 1;
+	fib_str += "<br>";
+	
+	for(i=0; i < n; i++){
+		f = fib_1 + fib_2;
+		fib_str += f;
+		fib_str += "<br>"
+		fib_1 = fib_2;
+		fib_2 = f;
+	}
+	return fib_str;
+	};
+	
+	document.write(f(100));
+</script>
+</body>
